@@ -123,31 +123,27 @@ li:before {
 }
 
 .textblock {
-    display: inline-block;
+    display: none;
+    /* display: inline-block; */
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
+    height: 160px;
+    overflow: hidden;
     position: absolute;
     box-sizing: border-box;
     text-align: center;
     background-color: rgba(143, 144, 144, 0.811);
-    top: 25%;
+    top: 50%;
+    margin-top: -80px;
 }
 
 .img_container:hover .textblock {
-    display: block; 
+    display: flex;
+    flex-flow: column;
+    justify-content: center; 
+
 }
 
 .img_container:hover .gallery_img {
     opacity: 0.8;
-}
-
-.textblock p {
-    position: absolute;
-    top: 20%;
-    bottom: 20%;
-    max-height: 60%;
-    overflow: hidden;
-    display: block;
-    font-size: 16px;
-    word-spacing: inherit;
 }
